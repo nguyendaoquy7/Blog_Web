@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "slug": "xay-dung-website-blog-voi-html-css-js",
+    "title": "Xây dựng website blog với HTML, CSS, JS",
+    "author": "Admin",
+    "date": "2025-03-01T09:00:00.000Z",
+    "tags": ["HTML", "CSS", "JavaScript", "Frontend"],
+    "excerpt": "Hướng dẫn từng bước để tạo một blog tĩnh hiện đại chỉ với HTML, CSS và JavaScript thuần.",
+    "coverImage": "assets/images/cover-1.svg",
+    "content": "<p>Trong bài viết này, chúng ta sẽ xây dựng một blog tĩnh hoàn chỉnh chỉ với HTML, CSS và JavaScript. Bạn sẽ có trang chủ hiển thị danh sách bài viết, trang chi tiết bài viết, ô tìm kiếm, lọc theo thẻ và hệ thống bình luận lưu bằng localStorage.</p>\n<h2>Cấu trúc dự án</h2>\n<pre><code>blog/\n├── index.html\n├── post.html\n├── about.html\n├── styles.css\n├── main.js\n└── posts.json\n</code></pre>\n<p>Sau khi tạo cấu trúc, bạn có thể chạy một web server tĩnh như <code>python3 -m http.server</code> để xem trên trình duyệt.</p>\n<h2>Tại sao chọn web tĩnh?</h2>\n<ul><li>Triển khai nhanh, chi phí thấp</li><li>Bảo mật cao (không có backend)</li><li>Hiệu năng tốt</li></ul>\n<p>Bạn có thể mở rộng bằng cách thêm Service Worker, nén hình ảnh, hoặc tích hợp CMS headless sau này.</p>"
+  },
+  {
+    "id": 2,
+    "slug": "meo-toi-uu-seo-cho-blog-tinh",
+    "title": "Mẹo tối ưu SEO cho blog tĩnh",
+    "author": "Admin",
+    "date": "2025-02-15T08:00:00.000Z",
+    "tags": ["SEO", "Hiệu năng"],
+    "excerpt": "Một số mẹo nhanh giúp cải thiện SEO và trải nghiệm người dùng cho blog tĩnh của bạn.",
+    "coverImage": "assets/images/cover-2.svg",
+    "content": "<p>Để SEO tốt hơn, hãy thêm thẻ meta mô tả, tiêu đề rõ ràng, sử dụng heading hợp lý và tối ưu tốc độ tải trang.</p>\n<h2>Mẹo nhanh</h2>\n<ul><li>Thiết lập title và meta description</li><li>Dùng thẻ <code>alt</code> cho hình ảnh</li><li>Tối ưu kích thước ảnh</li><li>Dùng <code>preload</code> cho font quan trọng</li></ul>\n<p>Đừng quên tạo sitemap và file robots.txt khi triển khai.</p>"
+  },
+  {
+    "id": 3,
+    "slug": "huong-dan-css-grid-va-flexbox",
+    "title": "Hướng dẫn CSS Grid và Flexbox",
+    "author": "Admin",
+    "date": "2025-01-20T07:30:00.000Z",
+    "tags": ["CSS", "Layout"],
+    "excerpt": "Nắm vững layout hiện đại với Grid và Flexbox qua các ví dụ ngắn gọn.",
+    "coverImage": "assets/images/cover-3.svg",
+    "content": "<p>Grid và Flexbox là hai công cụ layout mạnh mẽ. Flexbox phù hợp cho trục đơn (hàng hoặc cột), trong khi Grid mạnh về bố cục 2 chiều.</p>\n<h2>Ví dụ nhanh</h2>\n<pre><code>.container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 16px;\n}\n.item {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n</code></pre>\n<p>Hãy kết hợp cả hai để đạt bố cục linh hoạt và dễ bảo trì.</p>"
+  }
+]

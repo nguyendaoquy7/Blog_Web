@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyBlog — Chia sẻ kiến thức Web</title>
+  <meta name="description" content="Blog chia sẻ kiến thức về HTML, CSS, JavaScript và lập trình web.">
+  <meta property="og:title" content="MyBlog — Chia sẻ kiến thức Web">
+  <meta property="og:description" content="Blog chia sẻ kiến thức về HTML, CSS, JavaScript và lập trình web.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Trang chủ">MyBlog</a>
+      <nav class="nav" aria-label="Chính">
+        <a href="index.html" aria-current="page">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Chuyển chế độ sáng/tối">🌓</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Blog về HTML, CSS & JavaScript</h1>
+      <p>Các bài viết, hướng dẫn và mẹo nhỏ giúp bạn xây dựng web tốt hơn.</p>
+      <div class="search-bar">
+        <input id="searchInput" type="search" placeholder="Tìm kiếm bài viết..." autocomplete="off" aria-label="Tìm kiếm bài viết">
+      </div>
+      <div id="tagFilters" class="tag-filters" aria-label="Lọc theo thẻ"></div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div id="postsContainer" class="posts-grid" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MyBlog. Xây dựng bằng HTML • CSS • JS.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module" defer></script>
+</body>
+</html>

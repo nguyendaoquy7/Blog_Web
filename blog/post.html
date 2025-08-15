@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài viết — MyBlog</title>
+  <meta name="description" content="Đọc bài viết chi tiết trên MyBlog.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="post">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MyBlog</a>
+      <nav class="nav" aria-label="Chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Chuyển chế độ sáng/tối">🌓</button>
+    </div>
+  </header>
+
+  <main class="container post-layout">
+    <article id="postContainer" class="post" aria-live="polite"></article>
+    <aside id="postSidebar" class="post-sidebar">
+      <div class="card">
+        <h3>Bài viết mới</h3>
+        <ul id="recentPosts" class="recent-posts"></ul>
+      </div>
+      <div class="card">
+        <h3>Chia sẻ</h3>
+        <button id="copyLinkBtn">Sao chép liên kết</button>
+      </div>
+    </aside>
+  </main>
+
+  <section class="container comments">
+    <h2>Bình luận</h2>
+    <form id="commentForm" class="comment-form" autocomplete="off">
+      <div class="row">
+        <label for="commentName">Tên</label>
+        <input id="commentName" name="name" type="text" placeholder="Tên của bạn" required>
+      </div>
+      <div class="row">
+        <label for="commentContent">Nội dung</label>
+        <textarea id="commentContent" name="content" rows="4" placeholder="Viết bình luận..." required></textarea>
+      </div>
+      <button type="submit">Gửi bình luận</button>
+    </form>
+    <ul id="commentsList" class="comments-list"></ul>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MyBlog. Cảm ơn bạn đã đọc!</p>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module" defer></script>
+</body>
+</html>
